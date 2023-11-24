@@ -30,13 +30,13 @@ async def index():
 
         await page.get_by_role('button', name='Fazer Login').click() # ----! Quando é classe usa ( . )
         
-        await page.goto("https://sofitview.com.br/#/client/reports/414")
+        await page.goto("https://sofitview.com.br/#/client/reports/414")   # --! Page inicie a seguinte URL
 
         await page.locator("xpath=//h3[text()='Filtros ']").click()
 
         await page.locator("xpath=//*[@id='ember2012']/div[2]/div/div[3]/button[2]").click()
         
-        await page.locator("xpath=//*[@id='ember2464']/div[1]/div[2]/div/a[1]").click()
+        await page.locator("xpath=//*[@id='ember2464']/div[1]/div[2]/div/a[1]").click() 
         
         await page.pause()   
     
